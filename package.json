@@ -1,6 +1,10 @@
 {
   "name": "ng_grunt_karma_jasmine",
   "description": "AngularJS Grunt Karma Jasmine setup",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pailas/AngularJS-Jasmine-Karma.git"
+    },
   "dependencies": {
     "angular": "~1.6.7",
     "angular-animate": "~1.6.7",
@@ -22,5 +26,9 @@
     "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-safari-launcher": "^1.0.0"
-  }
+  },
+  "authors": [
+    "Srinivas Paila"
+  ],
+  "license": "MIT"
 }
