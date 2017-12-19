@@ -1,10 +1,10 @@
 {
   "name": "ng_grunt_karma_jasmine",
   "description": "AngularJS Grunt Karma Jasmine setup",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/pailas/AngularJS-Jasmine-Karma.git"
-    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pailas/AngularJS-Jasmine-Karma.git"
+  },
   "dependencies": {
     "angular": "~1.6.7",
     "angular-animate": "~1.6.7",
@@ -22,6 +22,7 @@
     "karma": ">=1.7.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.1",
+    "karma-xml-reporter": "^0.1.4",
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "^1.0.4",
