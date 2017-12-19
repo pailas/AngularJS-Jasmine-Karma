@@ -2,12 +2,14 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
         html2js: {
             main: {
                 src: ['src/**/*.html'],
                 dest: 'src/templates.js'
             }
         },
+
         karma: {
             unit: {
                 configFile: 'karma.conf.js',
@@ -18,6 +20,7 @@ module.exports = function (grunt) {
                 configFile: 'karma.conf.js'
             }
         },
+
         open:{
             coverage: {
                 path: './coverage/view/index.html'
@@ -30,7 +33,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-open');
 
     grunt.registerTask('default', ['html2js', 'karma:unit']);
-    grunt.registerTask('test', ['html2js', 'karma:unit']);
+    grunt.registerTask('test', ['html2js', 'karma:unit', 'open:coverage']);
     grunt.registerTask('coverage', ['html2js', 'karma:coverage', 'open:coverage']);
 }; 
 
