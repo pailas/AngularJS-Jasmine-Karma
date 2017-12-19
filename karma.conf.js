@@ -19,7 +19,7 @@ module.exports = function(config) {
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'src/**/*.js',
-      'tests/**/*.js'
+      'tests/**/*Spec.js'
     ],
 
 
@@ -51,7 +51,9 @@ module.exports = function(config) {
       dir: 'coverage/',
       reporters: [
         { type: "html", subdir: "view" },
-        { type: 'text-summary' }
+        { type: 'text-summary' },
+        { type: 'cobertura', subdir: 'xml', file: 'coverage.xml' },
+        { type: 'lcov', subdir: 'lcov' },
       ]
     },
 
