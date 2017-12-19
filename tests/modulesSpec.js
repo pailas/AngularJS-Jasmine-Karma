@@ -25,4 +25,7 @@ describe('mocking module', function(){
     it('should load first and its service', function(){
         expect(sampleSvc).toBeDefined();
     });
+    it('should load first and its service', function(){
+        expect(1).toEqual(2);
+    });
 });
